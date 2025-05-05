@@ -1,0 +1,41 @@
+	Virtual Enviroment
+
+1.	sudo apt update
+2.	sudo apt install python3-venv
+3.	python3 -m venv myenv
+4.	source /myenv/bin/activate
+5.	deactivate
+
+
+	Git Pull Command
+
+1.	mkdir directory
+2.	git init
+3.	git pull (link)
+
+
+	User Creation and Modification
+
+1.	getent group groupname            ---   see specific group info
+2.	getent passwd username            ---   see specific user info
+3.	cat  /etc/group                   ---   see all group info
+4.	cat  /etc/passwd                  ---   see all user info
+5.	sudo adduser kiran –gid 1001      ---   add user with group
+6.	sudo addgroup  kiran              ---   add group   
+7.	sudo usermod kiran -g dac         ---   change primary group of user
+8.	sudo usermod kiran -G dac         ---   change Supplementary group of user
+
+
+	File Creation And Modification
+1.	sudo chown raju abc.txt                                    ---   change owner of file
+2.	sudo chgrp raju abc.txt                                    ---   change group of file
+3.	setfacl  -m   u:username:rwx    abc.txt                    ---   to set permission for special user
+4.	setfacl  -m   u::rwx    abc.txt                            ---  to set permission for owner
+5.	setfacl  -m   g::rwx    abc.txt                            ---  to set permission for group 
+6.	setfacl  -m   o::rwx    abc.txt                            ---  to set permission for others
+7.	setfacl  -b   abc.txt                                      ---  to cancel permission of all user 
+
+
+
+
+
